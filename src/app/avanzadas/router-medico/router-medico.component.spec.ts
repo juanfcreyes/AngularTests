@@ -51,11 +51,8 @@ describe('RouterMedicoComponent', () => {
 	it('Debe colocar el id = nuevo', () => {
 		component = fixture.componentInstance;
 		const activatedRoute: FakeActivatedRoute = TestBed.get(ActivatedRoute);
-
 		activatedRoute.push({id: 'nuevo'});
-
 		expect(component.id).toBe('nuevo')
-
 	});
 
 });
